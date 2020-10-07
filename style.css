@@ -15,39 +15,38 @@
 }
 
 .logo{
-width: 100px;
+    width: 100px;
 
 }
 
 .sidebar-top {
-display: flex;
-align-items: flex-start;
+    display: flex;
+    align-items: flex-start;
 }
 
 .sidebar-bottom {
-align-items: flex-end;
+    align-items: flex-end;
 }
 
 
 main {
     height:calc(100vh - 80px);
     background-color: #c18c16;
-
     width: 90%;
     float: left;
-}
-
-.menu > ul{
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-align-items: center;
-
-flex-wrap: wrap;
-
-
 
 }
+
+.menu > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
 
 footer {
     height: 80px;
