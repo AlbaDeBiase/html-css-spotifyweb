@@ -7,20 +7,44 @@
 
 .sidebar {
     height:calc(100vh - 80px);
-    background-color: yellow;
-    width: 20%;
-float: left;
+    background-color: #2b270c;
+    width: 10%;
+    float: left;
+    display: flex;
+    flex-shrink: 2;
+}
 
-
+.logo{
+width: 100px;
 
 }
 
+.sidebar-top {
+display: flex;
+align-items: flex-start;
+}
+
+.sidebar-bottom {
+align-items: flex-end;
+}
+
+
 main {
     height:calc(100vh - 80px);
-    background-color: red;
-    display: flex;
-    width: 80%;
+    background-color: #c18c16;
+
+    width: 90%;
     float: left;
+}
+
+.menu > ul{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+flex-wrap: wrap;
+
 
 
 }
@@ -28,6 +52,6 @@ main {
 footer {
     height: 80px;
     width: 100%;
-    background-color: green;
+    background-color: #3f3f3f;
     display: flex;
 }
