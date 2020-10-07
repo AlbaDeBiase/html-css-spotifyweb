@@ -40,13 +40,26 @@ main {
 .menu > ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-transform: uppercase;
     text-decoration: none;
+    list-style-type: none;
 }
 
+.voci-menu-top{
+    margin-left: 40px;
+    margin-top: 30px;
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+font-family: "Lato";
+}
+
+.title-playlist {
+display:flex;
+}
 
 footer {
     height: 80px;
