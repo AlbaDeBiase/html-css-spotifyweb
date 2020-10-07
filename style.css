@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.sidebar {
+    height:calc(100vh - 80px);
+    background-color: yellow;
+    width: 20%;
+float: left;
+
+
+
+}
+
+main {
+    height:calc(100vh - 80px);
+    background-color: red;
+    display: flex;
+    width: 80%;
+    float: left;
+
+
+}
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: green;
+    display: flex;
+}
