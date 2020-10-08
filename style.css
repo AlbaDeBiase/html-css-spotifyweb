@@ -52,7 +52,7 @@ main {
     background-color: #c18c16;
     width: 90%;
     float: left;
-overflow: scroll;
+    overflow:scroll;
 
 }
 
@@ -75,6 +75,10 @@ overflow: scroll;
     font-size: 12px;
     font-weight: bold;
 
+}
+
+.hamburger-menu {
+    display: none;
 }
 
 .title-playlist {
@@ -105,15 +109,8 @@ overflow: scroll;
     flex-wrap: wrap;
 }
 
-/* .box1{
-    position: static;
-    margin-top: 35px;
-    margin-left: 166px;
-
-} */
 .cube{
-    /* width: 120px; */
-    margin-top: 30px;
+    margin-top: 40px;
     flex-wrap: wrap;
 }
 
@@ -123,9 +120,182 @@ footer {
     width: 100%;
     background-color: #3f3f3f;
     display: flex;
-    /* justify-content: flex-end; */
 
-    /* position: absolute;
-    bottom:0;
-    left:0; */
 }
+
+/* mediaquery tablet */
+
+@media screen and (max-width:768px){
+
+.wrapper::after{
+    clear:both;
+    content:"";
+    display:table;
+
+    }
+
+.container{
+    max-width: 768px;
+    margin:auto;
+    }
+
+.menu {
+    display: none;
+}
+
+.hamburger-menu {
+    display: block;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
+}
+
+.sidebar {
+    height:calc(100vh - 80px);
+    background-color: #2b270c;
+    width: 20%;
+    float: left;
+    display: flex;
+    /* flex-shrink: 2; */
+    }
+
+main {
+    height:calc(100vh - 80px);
+    width: 80%;
+    float: left;
+    overflow: scroll;
+
+    }
+.title-playlist {
+    display:flex;
+    /* margin-left: 158px; */
+    margin-top: 38px;
+    margin-left:20px;
+
+    }
+
+.daily-mix {
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+
+    }
+.daily-mix > img  {
+        width: 100px;
+        margin-left: 35px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+}
+
+.round {
+    border-radius: 70px;
+    flex-wrap: wrap;
+}
+
+.cube{
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: #3f3f3f;
+    display: flex;
+
+    }
+
+}
+
+/* media query cellulare */
+
+@media screen and (max-width:420px){
+
+.wrapper::after{
+        clear:both;
+        content:"";
+        display:table;
+
+        }
+
+.container{
+    max-width: 420px;
+    margin:auto;
+    }
+
+.menu {
+        display: none;
+    }
+
+.hamburger-menu {
+        display: block;
+    }
+.fa-bars:before {
+        content: "\f0c9";
+        color: white;
+        margin-left: 10px;
+        font-size: 30px;
+    }
+
+.sidebar {
+        height:calc(100vh - 40px);
+        background-color: #2b270c;
+        width: 20%;
+        float: left;
+        display: flex;
+        /* flex-shrink: 2; */
+        }
+
+main {
+        height:calc(100vh - 40px);
+        width: 80%;
+        float: left;
+        overflow: scroll;
+
+        }
+.title-playlist {
+        display:flex;
+        /* margin-left: 158px; */
+        margin-top: 38px;
+        margin-left:20px;
+
+        }
+
+.daily-mix {
+        display: flex;
+        /* justify-content: center; */
+        flex-wrap: wrap;
+
+        }
+.daily-mix > img  {
+        width: 80px;
+        margin-left: 35px;
+        margin-top: 30px;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+
+}
+.round {
+    border-radius: 70px;
+    flex-wrap: wrap;
+}
+
+.cube{
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+
+footer {
+        height: 40px;
+        width: 80%;
+        background-color: #3f3f3f;
+        display: flex;
+
+        }
+
+    }
