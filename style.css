@@ -4,8 +4,17 @@
     box-sizing: border-box;
 }
 
+.wrapper::after{
+clear:both;
+content:"";
+display:table;
+
+}
+
+
 .container{
-  width: 100%;
+  width: 1200px;
+  margin:auto;
 }
 
 body{
@@ -43,6 +52,7 @@ main {
     background-color: #c18c16;
     width: 90%;
     float: left;
+overflow: scroll;
 
 }
 
@@ -55,6 +65,7 @@ main {
     text-transform: uppercase;
     text-decoration: none;
     list-style-type: none;
+
 }
 
 .voci-menu-top{
@@ -68,8 +79,9 @@ main {
 
 .title-playlist {
     display:flex;
-    margin-left: 158px;
+    /* margin-left: 158px; */
     margin-top: 38px;
+
 }
 
 .title-playlist > h1{
@@ -78,30 +90,31 @@ main {
 }
 .daily-mix {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-wrap: wrap;
-    position: static;
 
 }
  .daily-mix > img  {
-    width: 110px;
+    width: 150px;
     margin-left: 35px;
     margin-top: 30px;
 }
 
 .round {
     border-radius: 70px;
+    flex-wrap: wrap;
 }
 
-.box1{
+/* .box1{
     position: static;
     margin-top: 35px;
     margin-left: 166px;
 
-}
+} */
 .cube{
-    width: 110px;
+    /* width: 120px; */
     margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 
