@@ -5,36 +5,73 @@
 }
 
 .wrapper::after{
-clear:both;
-content:"";
-display:table;
+    clear:both;
+    content:"";
+    display:table;
 
 }
 
 
 .container{
-  width: 1200px;
-  margin:auto;
+    width: 1200px;
+    margin:auto;
 }
 
 body{
-font-family: sans-serif;
+    font-family: sans-serif;
 }
 
 
 .sidebar {
     height:calc(100vh - 80px);
     background-color: #2b270c;
-    width: 10%;
+    width: 12%;
     float: left;
     display: flex;
     /* flex-shrink: 2; */
 }
+.sidebar-top {
+    flex-direction: column;
+    color: white;
+    margin-left: 20px;
+    font-size: 18px;
+    padding-top: 18px;
+}
 
 .logo{
     width: 100px;
+    padding-bottom: 20px;
 
 }
+.logo-piccolo {
+    display:none;
+
+}
+
+.icone {
+    /* flex-direction: column; */
+    color:white;
+    margin-top: 10px;
+
+
+}
+
+.fa-spotify:before {
+    display: none;
+}
+
+.paragrafo {
+    padding-left: 10px;
+    font-size: 11px;
+    font-family: sans-serif;
+    font-weight:100px;
+    opacity: 0.7;
+}
+
+.paragrafo:hover{
+color:white;
+}
+
 
 .sidebar-top {
     display: flex;
@@ -50,7 +87,7 @@ font-family: sans-serif;
 main {
     height:calc(100vh - 80px);
     background-color: #c18c16;
-    width: 90%;
+    width: 88%;
     float: left;
     overflow:scroll;
 
@@ -147,6 +184,7 @@ footer {
     display: block;
 }
 .fa-bars:before {
+    display: block;
     content: "\f0c9";
     color: white;
     margin-left: 10px;
@@ -178,16 +216,16 @@ main {
     }
 
 .daily-mix {
-        display: flex;
-        /* justify-content: center; */
-        flex-wrap: wrap;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 
     }
 .daily-mix > img  {
-        width: 100px;
-        margin-left: 35px;
-        margin-top: 30px;
-        flex-wrap: wrap;
+    width: 100px;
+    margin-left: 35px;
+    margin-top: 30px;
+    flex-wrap: wrap;
 }
 
 .round {
@@ -216,9 +254,9 @@ footer {
 @media screen and (max-width:420px){
 
 .wrapper::after{
-        clear:both;
-        content:"";
-        display:table;
+    clear:both;
+    content:"";
+    display:table;
 
         }
 
@@ -228,55 +266,76 @@ footer {
     }
 
 .menu {
-        display: none;
+    display: none;
     }
 
 .hamburger-menu {
-        display: block;
+    display: block;
     }
 .fa-bars:before {
-        content: "\f0c9";
-        color: white;
-        margin-left: 10px;
-        font-size: 30px;
+    content: "\f0c9";
+    color: white;
+    margin-left: 10px;
+    font-size: 30px;
     }
 
 .sidebar {
-        height:calc(100vh - 40px);
-        background-color: #2b270c;
-        width: 20%;
-        float: left;
-        display: flex;
+    height:calc(100vh - 40px);
+    background-color: #2b270c;
+    width: 20%;
+    float: left;
+    display: flex;
         /* flex-shrink: 2; */
         }
+.sidebar-top{
+    margin-top: 20px;
+    margin-left: 20px;
+}
 
+.logo{
+display: none;
+}
+
+.logo-piccolo {
+display:block;
+}
+.fa-spotify:before {
+    display: block;
+    content: "\f1bc";
+    color: white;
+    font-size: 30px;
+}
+
+.paragrafo {
+    display:none;
+}
 main {
-        height:calc(100vh - 40px);
-        width: 80%;
-        float: left;
-        overflow: scroll;
+    height:calc(100vh - 40px);
+    width: 80%;
+    float: left;
+    overflow: scroll;
 
         }
 .title-playlist {
-        display:flex;
-        /* margin-left: 158px; */
-        margin-top: 38px;
-        margin-left:20px;
+    display:flex;
+    /* margin-left: 158px; */
+    margin-top: 38px;
+    margin-left:20px;
 
         }
 
 .daily-mix {
-        display: flex;
-        /* justify-content: center; */
-        flex-wrap: wrap;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
 
         }
 .daily-mix > img  {
-        width: 80px;
-        margin-left: 35px;
-        margin-top: 30px;
-        flex-wrap: wrap;
-        flex-shrink: 0;
+    width: 80px;
+    margin-left: 35px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
 
 }
 .round {
@@ -291,10 +350,10 @@ main {
 
 
 footer {
-        height: 40px;
-        width: 80%;
-        background-color: #3f3f3f;
-        display: flex;
+    height: 40px;
+    width: 80%;
+    background-color: #3f3f3f;
+    display: flex;
 
         }
 
