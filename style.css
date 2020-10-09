@@ -33,7 +33,7 @@ body{
 .sidebar-top {
     flex-direction: column;
     color: white;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 18px;
     padding-top: 18px;
     display: flex;
@@ -315,6 +315,22 @@ background-color:red; */
     cursor: pointer;
 }
 
+.right {
+display: flex;
+align-items: center;
+}
+
+
+.right input{
+    width: 40%;
+}
+
+.right i {
+    color:white;
+    opacity:0.5;
+    padding: 5px;
+}
+
 
 @media screen and (max-width:1200px){
 
@@ -529,6 +545,9 @@ footer {
     margin:auto;
     } */
 
+.logo {
+        width: 80px;
+}
 .menu {
     display: none;
 }
@@ -613,7 +632,9 @@ footer {
 
     }
 
-
+    .artist {
+    display:none;
+    }
 }
 
 /* media query cellulare */
@@ -647,7 +668,7 @@ footer {
     }
 
 .sidebar {
-    height:calc(100vh - 40px);
+    height:calc(100vh - 80px);
     background-color: #2b270c;
     width: 12%;
     float: left;
@@ -682,7 +703,7 @@ display:none
  }
 
 main {
-    height:calc(100vh - 40px);
+    height:calc(100vh - 80px);
     width: 88%;
     float: left;
     overflow: auto;
@@ -725,14 +746,46 @@ main {
 }
 
 
-
-
 footer {
-    height: 40px;
+    height: 80px;
     width: 100%;
     background-color: #3f3f3f;
     display: flex;
 
-        }
+}
+
+.artist {
+    display:none;
+}
+
+.cover img{
+    width: 48px;
+    padding:5px;
+
+}
+.right{
+    display:none;
+}
+
+.fa-redo-alt:before {
+    display:none;
+}
+.icons{
+    font-size: 14px;
+    padding:0;
+}
+.icons i{
+    font-size: 12px;
+
+}
+
+.time{
+    font-size: 9px;
+}
+
+
+.heart i{
+    font-size: 10px;
+}
 
     }
