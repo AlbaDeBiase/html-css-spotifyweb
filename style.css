@@ -619,9 +619,9 @@ main {
     margin-top: 40px;
     flex-wrap: wrap;
 }
-.install, .copy {
+/* .install, .copy {
     display:none;
-}
+} */
 
 
 footer {
@@ -677,7 +677,7 @@ footer {
         }
 .sidebar-top{
     margin-top: 20px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .logo{
@@ -741,10 +741,15 @@ main {
     flex-wrap: wrap;
 }
 
-.install, .copy {
+.install, .copy{
     display:none;
 }
 
+
+
+/* .sidebar-bottom i {
+display:block;
+} */
 
 footer {
     height: 80px;
@@ -787,5 +792,7 @@ footer {
 .heart i{
     font-size: 10px;
 }
+
+
 
     }
