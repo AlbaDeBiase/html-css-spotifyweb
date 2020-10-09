@@ -69,25 +69,49 @@ body{
 }
 
 .side-maiuscolo {
-    margin-top: 10px;
+    margin-top: 8px;
     text-transform: uppercase;
     color:white;
     font-size: 10px;
     opacity:0.7;
 }
 
-.sotto-menu {
-margin-top: 10px;
+.side-mainuscolo {
+    margin-top: 8px;
     color:white;
     font-size: 10px;
     opacity:0.7;
 }
 
-.sidebar-bottom {
-    display: flex;
-    align-items: flex-end;
+.sotto-menu{
+    margin-top: 20PX;
 }
+.sidebar-bottom {
+    /* display: flex;
+    align-items: flex-end; */
 
+}
+.install {
+    color:white;
+    padding-top: 280px;
+    font-size: 12px;
+    opacity: 0.7;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+
+}
+.fa-user:before {
+    content: "\f007";
+    font-size: 27px;
+    color: white;
+    padding-top: 5px;
+}
+.copy {
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    padding-top: 5px;
+}
 
 main {
     height:calc(100vh - 80px);
@@ -161,10 +185,32 @@ main {
 footer {
     height: 80px;
     width: 100%;
-    background-color: #3f3f3f;
+    /* background-color: #3f3f3f; */
     display: flex;
+    justify-content: space-between;
 
 }
+
+.left{
+width: 200px;
+background-color:red;
+
+
+}
+
+.center{
+width: 500px;
+background-color:green;
+
+
+}
+
+.right{
+width: 200px;
+background-color:pink;
+
+}
+
 
 /* mediaquery tablet */
 
@@ -333,6 +379,9 @@ main {
     margin-top: 40px;
     flex-wrap: wrap;
 }
+.install, .copy {
+display:none;
+}
 
 
 footer {
@@ -342,6 +391,7 @@ footer {
     display: flex;
 
     }
+
 
 }
 
@@ -405,6 +455,11 @@ display:block;
 .paragrafo {
     display:none;
 }
+
+.sotto-menu{
+display:none
+ }
+
 main {
     height:calc(100vh - 40px);
     width: 80%;
@@ -443,6 +498,11 @@ main {
     margin-top: 40px;
     flex-wrap: wrap;
 }
+
+.install, .copy {
+display:none;
+}
+
 
 
 footer {
